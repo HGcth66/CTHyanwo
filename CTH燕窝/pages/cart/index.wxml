@@ -1,0 +1,46 @@
+<view class="nogwc" wx:if="{{cart.length==0}}">
+    <image mode="widthFix" src="https://cdn.jsdelivr.net/gh/HGcth66/image/gouwuche.png"></image>
+    <view class="btn" bindtap="djqgg">去逛逛</view>
+</view>
+<view class="gwc" wx:if="{{cart.length!==0}}">
+<view class="gwctop">
+<view class="iconfont icon-4"></view>
+<text class="dpname">CTH燕窝店铺</text>
+<view class="iconfont icon-youjiantou"></view>
+</view>
+    <view class="goodsitem" wx:for="{{cart}}">
+        <view class="check">
+            <checkbox-group bindchange="djchecked" data-id="{{item.goodsid}}">
+                <checkbox checked="{{item.checked}}"></checkbox>
+            </checkbox-group>
+        </view>
+        <view class="goodsimg">
+            <image mode="widthFix" src="{{item.xq}}"></image>
+        </view>
+        <view class="priceitem">
+            <view class="topitem">{{item.name}}</view>
+            <view class="bottomitem">
+                <view class="price">￥{{item.price}}</view>
+                <view class="num">
+                    <view class="leftbtn" bindtap="djjj" data-id="{{item.goodsid}}" data-opration="{{1}}">+</view>
+                    <view class="jjtext">{{item.num}}</view>
+                    <view class="rightbtn" bindtap="djjj" data-id="{{item.goodsid}}" data-opration="{{-1}}">-</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <view class="checkall">
+        <checkbox-group bindchange="djcheckedall">
+            <checkbox checked="{{allchecked}}">全选</checkbox>
+        </checkbox-group>
+    </view>
+    <view class="priceall">
+        <view>合计：<text class="priceallwrap">￥{{totoilprice}}</text></view>
+        <view>包含运费</view>
+    </view>
+    <view class="js" bindtap="djjs">
+        结算
+    </view>
+</view>

@@ -1,0 +1,44 @@
+<view class="header">
+<view class="address">{{address.provinceName}}{{address.cityName}}{{address.countyName}}</view>
+<view class="xxaddress">{{address.provinceName}}{{address.cityName}}{{address.countyName}}{{address.detailInfo}}</view>
+<view class="nameitem">
+<text class="name">{{address.userName}}</text>
+<text class="phone">{{address.telNumber}}</text>
+</view>
+<view class="xxbottom">
+<view>配送方式</view>
+<view>
+<text>快递</text>
+<text class="iconfont icon-youjiantou"></text>
+</view>
+</view>
+</view>
+<view class="cartall">
+<view class="carttop">
+<view class="iconfont icon-4"></view>
+<view class="dpname">CTH燕窝</view>
+</view>
+<view class="cartitem" wx:for="{{cart}}" wx:key="goodsid">
+<view class="leftitem">
+<image src="{{item.xq}}" mode="widthFix"></image>
+</view>
+<view class="rightitem">
+<view class="itemname">{{item.name}}</view>
+<view class="pricenum">
+<view class="goodsprice">￥{{item.price}}</view>
+<view class="goodsnum">X{{item.num}}</view>
+</view>
+</view>
+</view>
+<view class="cartbottom">
+<text>运费</text>
+<text>包邮</text>
+</view>
+</view>
+<view class="footer">
+<view class="priceitem">
+<view class="firstprice">应付：</view>
+<view class="price">￥{{totoilprice}}</view>
+</view>
+<view class="tjdj" bindtap="tjdd">提交订单</view>
+</view>

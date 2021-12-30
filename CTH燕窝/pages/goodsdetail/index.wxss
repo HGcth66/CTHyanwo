@@ -1,0 +1,165 @@
+page {
+  padding-bottom: 90rpx ;
+}
+.swiper swiper {
+  height: 80vw;
+  text-align: center;
+  padding-bottom: 30rpx;
+}
+.priceitem {
+  padding: 0 25rpx ;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.priceitem .price {
+  padding: 20rpx 0;
+  font-size: 42rpx;
+  color: var(--themecolor);
+  font-weight: 700;
+}
+.priceitem .nameprice {
+  display: flex;
+  padding-bottom: 20rpx;
+}
+.priceitem .nameprice .leftname {
+  flex: 8;
+  padding-right: 20rpx;
+}
+.priceitem .nameprice .rightname {
+  flex: 1;
+  color: #666;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.priceitem .nameprice .rightname button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.priceitem .itembottom {
+  font-size: 28rpx;
+  color: #666;
+  padding-bottom: 20rpx;
+}
+.yunfei {
+  font-size: 30rpx;
+  padding: 30rpx 25rpx ;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.yunfei :nth-child(1) {
+  color: #666;
+  padding-right: 30rpx;
+}
+.yunfei :nth-child(3) {
+  color: #666;
+  float: right;
+}
+.fuwu {
+  font-size: 30rpx;
+  padding: 30rpx 25rpx ;
+  background-color: #fff;
+}
+.fuwu :nth-child(1) {
+  color: #666;
+  padding-right: 30rpx;
+}
+.fuwu :nth-child(3) {
+  color: #666;
+  float: right;
+}
+.xuanzhe {
+  font-size: 30rpx;
+  padding: 30rpx 25rpx ;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.xuanzhe :nth-child(1) {
+  color: #666;
+  padding-right: 30rpx;
+}
+.xuanzhe :nth-child(3) {
+  color: #666;
+  float: right;
+}
+.pingjia {
+  padding: 30rpx 25rpx ;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.pingjia text:first-child {
+  font-size: 30rpx;
+}
+.pingjia text:last-child {
+  font-size: 26rpx;
+  color: #666;
+  float: right;
+}
+.goodsxq {
+  width: 100%;
+  text-align: center;
+}
+.goodsxq .xqitem {
+  width: 100%;
+}
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  height: 90rpx;
+}
+.bottom .bottomitem {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.bottom .bottomitem button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.bottom .btn {
+  flex: 7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  font-size: 28rpx;
+}
+.bottom .btn .btncat {
+  background-color: #ffa500;
+  color: #fff;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rpx 0 0 50rpx;
+}
+.bottom .btn .btnbuy {
+  background-color: #eb4450;
+  color: #fff;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 50rpx 50rpx 0;
+}

@@ -1,0 +1,61 @@
+<view class="swiper">
+<swiper autoplay circular indicator-dots indicator-active-color="var(--themecolor)">
+<swiper-item wx:for="{{goodsdetail.pics}}" wx:key="id" bindtap="djimage" data-url="{{item.src}}">
+<image mode="widthFix" src="{{item.src}}"></image>
+</swiper-item>
+</swiper>
+</view>
+<view class="priceitem">
+<view class="price">￥{{goodsdetail.price}}</view>
+<view class="nameprice">
+<view class="leftname">{{goodsdetail.name}}</view>
+<view class="rightname"><view class="iconfont icon-arrow-"></view><view>分享</view><button open-type="share"></button></view>
+</view>
+<view class="itembottom">原料只有纯净水+燕窝原味炖出，保质期仅有7天更新鲜
+每瓶搭配独特熬制燕窝口味伴侣更方便</view>
+</view>
+<view class="yunfei">
+<text>运费</text>
+<text>待下单确认</text>
+<text>已售 999</text>
+</view>
+<view class="fuwu">
+<text>服务</text>
+<text>收货后结算 · 线下门店 · 快递发货</text>
+<text class="iconfont icon-youjiantou"></text>
+</view>
+<view class="xuanzhe">
+<text>选择</text>
+<text>规格</text>
+<text class="iconfont icon-youjiantou"></text>
+</view>
+<view class="pingjia">
+<text>商品评价</text>
+<text>暂无评价</text>
+</view>
+<image mode="widthFix" src="{{goodsdetail.xq}}"></image>
+<view class="goodsxq">
+<view class="xqitem" wx:for="{{goodsxq}}" wx:key="id">
+<image mode="widthFix" src="{{item.src}}"></image>
+</view>
+</view>
+<view></view>
+<view class="bottom">
+ <view class="bottomitem">
+ <view class="iconfont icon-kefu"></view>
+ <view>客服</view>
+ <button open-type="contact"></button>
+ </view>
+ <navigator url="../index/index" open-type="switchTab" class="bottomitem">
+    <view class="iconfont icon-dianpu-xianxing"></view>
+    <view>店铺</view>
+</navigator>
+ <navigator url="../cart/index" open-type="switchTab" class="bottomitem">
+    <view class="iconfont icon-gouwuche"></view>
+    <view>购物车</view>
+ </navigator>
+ <view class="btn">
+ <view class="btncat" bindtap="jrgwc">加入购物车</view>
+ <view class="btnbuy" bindtap="ljgm" data-goodsid="{{goodsdetail.goodsid}}">立即购买</view>
+ </view>
+</view>

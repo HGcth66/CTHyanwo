@@ -1,0 +1,56 @@
+<view class="swiper">
+<swiper autoplay circular indicator-dots indicator-color="#666" indicator-active-color="#d33333">
+<swiper-item wx:for="{{swiper}}" wx:key="id">
+<navigator>
+<image mode="widthFix" src="{{item.src}}"></image>
+</navigator>
+</swiper-item>
+</swiper>
+</view>
+<tabs class="tabs"></tabs>
+<view class="list">
+<view class="left">
+    <navigator url="../category/index" open-type="switchTab">
+<image mode="widthFix" src="{{dhleft.src}}"></image>
+</navigator>
+</view>
+<view class="right">
+<navigator wx:for="{{dhright}}" url="../category/index" open-type="switchTab">
+<image mode="widthFix" src="{{item.src}}"></image>
+</navigator>
+</view>
+</view>
+<view class="xq">
+<navigator wx:for="{{xq}}" wx:key="goodsid" url="../goodsdetail/index?goodsid={{item.goodsid}}">
+<image mode="widthFix" src="{{item.src}}"></image>
+</navigator>
+</view>
+<view class="goods">
+<view class="goodsitem" wx:for="{{goods}}" wx:key="leftgoodsid">
+<navigator url="../goodsdetail/index?goodsid={{item.leftgoodsid}}">
+<view class="goods1">
+<image mode="widthFix" src="{{item.leftsrc}}"></image>
+<view class="goodsname">{{item.leftname}}</view>
+<view class="goodstext">满两件立减20元</view>
+<view class="goodspriceitem">
+<view class="priceleft">￥{{item.leftprice}}</view>
+<view class="priceright">立即抢购></view>
+</view>
+</view>
+</navigator>
+<navigator url="../goodsdetail/index?goodsid={{item.rightgoodsid}}">
+    <view class="goods2">
+<image mode="widthFix" src="{{item.rightsrc}}"></image>
+<view class="goodsname">{{item.rightname}}</view>
+<view class="goodstext">满两件立减20元</view>
+<view class="goodspriceitem">
+<view class="priceleft">￥{{item.rightprice}}</view>
+<view class="priceright">立即抢购></view>
+</view>
+</view>
+</navigator>
+</view>
+</view>
+<view class="footer">
+<image mode="widthFix" src="https://cdn.jsdelivr.net/gh/HGcth66/image/end.jpg"></image>
+</view>

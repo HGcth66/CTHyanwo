@@ -1,0 +1,56 @@
+.cate {
+  height: 100%;
+}
+.cate .container {
+  display: flex;
+  height: calc(100vh - 90rpx);
+}
+.cate .container .left {
+  flex: 2;
+  text-align: center;
+}
+.cate .container .left .leftcontent {
+  font-size: 28rpx;
+  color: #666;
+  padding: 25rpx;
+}
+.cate .container .left .active {
+  background-color: #fff;
+  color: black;
+  border-left: 7rpx solid var(--themecolor);
+}
+.cate .container .right {
+  background-color: #fff;
+  flex: 7;
+}
+.cate .container .right .rightcontent .righttitle {
+  font-size: 28rpx;
+  color: #666;
+  padding: 10rpx;
+}
+.cate .container .right .rightcontent .rightgoods {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+  height: 100%;
+}
+.cate .container .right .rightcontent .rightgoods image {
+  flex: 2;
+  padding: 10rpx;
+}
+.cate .container .right .rightcontent .rightgoods .goodsprice {
+  flex: 4;
+  padding: 10rpx;
+}
+.cate .container .right .rightcontent .rightgoods .goodsprice .goodsname {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  font-size: 28rpx;
+}
+.cate .container .right .rightcontent .rightgoods .goodsprice .price {
+  font-size: 32rpx;
+  color: var(--themecolor);
+  padding-top: 30rpx ;
+}

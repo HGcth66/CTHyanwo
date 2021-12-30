@@ -1,0 +1,70 @@
+<view class="infowrap">
+    <view class="imgwrap" wx:if="{{userinfo.avatarUrl}}">
+        <image class="bg" src="{{userinfo.avatarUrl}}"></image>
+        <view class="userinfo">
+            <image class="usericon" mode="widthFix" src="{{userinfo.avatarUrl}}"></image>
+            <view class="username">{{userinfo.nickName}}</view>
+        </view>
+    </view>
+    <view wx:else class="userbtn">
+        <button type="primary" open-type="getUserInfo" plain bindgetuserinfo="getuserinfo">登录</button>
+    </view>
+</view>
+<view class="content">
+    <view class="usermain">
+        <view class="history">
+            <navigator>
+                <view class="hisnum">0</view>
+                <view class="hisname">余额</view>
+            </navigator>
+            <navigator>
+                <view class="hisnum">0</view>
+                <view class="hisname">积分</view>
+            </navigator>
+            <navigator>
+                <view class="hisnum">0</view>
+                <view class="hisname">优惠券</view>
+            </navigator>
+            <navigator>
+                <view class="hisnum">0</view>
+                <view class="hisname">卡券</view>
+            </navigator>
+        </view>
+        <view class="orders">
+            <view class="ordertitle">我的订单</view>
+            <view class="ordercontent">
+                <navigator url="../order/index">
+                    <view class="iconfont icon-quanbudingdan"></view>
+                    <view class="text">全部订单</view>
+                </navigator>
+                <navigator url="../order/index">
+                    <view class="iconfont icon-daifukuan"></view>
+                    <view class="text">代付款</view>
+                </navigator>
+                <navigator url="../order/index">
+                    <view class="iconfont icon-daishouhuo"></view>
+                    <view class="text">待收货</view>
+                </navigator>
+                <navigator>
+                    <view class="iconfont icon-tuikuantuihuo"></view>
+                    <view class="text">退款/退货</view>
+                </navigator>
+            </view>
+        </view>
+        <view class="address">收货地址管理</view>
+        <view class="qtxx">
+            <view class="itemlxkf">
+                <text>联系客服</text>
+                <text class="iconfont icon-youjiantou"></text>
+            </view>
+            <view class="itemlxkf"><text>意见反馈</text>
+                <text class="iconfont icon-youjiantou"></text>
+            </view>
+            <view class="itemlxkf"><text>关于我们</text>
+                <text class="iconfont icon-youjiantou"></text>
+            </view>
+        </view>
+        <view class="tj">推荐给其他人
+        </view>
+    </view>
+</view>

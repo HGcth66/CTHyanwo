@@ -1,0 +1,99 @@
+.header {
+  background-color: white;
+  padding: 30rpx 40rpx;
+}
+.orders {
+  height: calc(100vh - 110rpx);
+}
+.orders .item {
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.orders .item .cartall {
+  background-color: white;
+  margin: 0 20rpx;
+  padding: 20rpx 20rpx;
+}
+.orders .item .cartall .carttop {
+  display: flex;
+}
+.orders .item .cartall .carttop .dpname {
+  padding-left: 10rpx;
+}
+.orders .item .cartall .address {
+  padding: 20rpx 0;
+}
+.orders .item .cartall .cartitem {
+  padding-bottom: 20rpx;
+  display: flex;
+}
+.orders .item .cartall .cartitem .leftitem {
+  flex: 1;
+}
+.orders .item .cartall .cartitem .leftitem image {
+  width: 90%;
+  border-radius: 20rpx;
+}
+.orders .item .cartall .cartitem .rightitem {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.orders .item .cartall .cartitem .rightitem .itemname {
+  font-size: 28rpx;
+}
+.orders .item .cartall .cartitem .rightitem .pricenum {
+  display: flex;
+  justify-content: space-between;
+}
+.orders .item .cartall .cartitem .rightitem .pricenum .goodsnum {
+  font-size: 28rpx;
+  color: #666;
+}
+.orders .item {
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.orders .item .cartall {
+  background-color: white;
+  margin: 0 20rpx;
+  padding: 20rpx 20rpx;
+}
+.orders .item .cartall .carttop {
+  display: flex;
+}
+.orders .item .cartall .carttop .dpname {
+  padding-left: 10rpx;
+}
+.orders .item .cartall .address {
+  padding: 20rpx 0;
+}
+.orders .item .cartall .cartitem {
+  padding-bottom: 20rpx;
+  display: flex;
+}
+.orders .item .cartall .cartitem .leftitem {
+  flex: 1;
+}
+.orders .item .cartall .cartitem .leftitem image {
+  width: 90%;
+  border-radius: 20rpx;
+}
+.orders .item .cartall .cartitem .rightitem {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.orders .item .cartall .cartitem .rightitem .itemname {
+  font-size: 28rpx;
+}
+.orders .item .cartall .cartitem .rightitem .pricenum {
+  display: flex;
+  justify-content: space-between;
+}
+.orders .item .cartall .cartitem .rightitem .pricenum .goodsnum {
+  font-size: 28rpx;
+  color: #666;
+}

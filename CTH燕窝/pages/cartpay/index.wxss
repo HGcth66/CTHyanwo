@@ -1,0 +1,100 @@
+page {
+  padding-bottom: 90rpx;
+}
+.header {
+  background-color: white;
+  border-radius: 10rpx;
+  margin: 40rpx 20rpx;
+  height: 23vh;
+  padding: 20rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header .address {
+  font-size: 28rpx;
+}
+.header .xxaddress {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.header .nameitem .name {
+  padding-right: 20rpx;
+}
+.header .xxbottom {
+  display: flex;
+  justify-content: space-between;
+}
+.cartall {
+  background-color: white;
+  margin: 0 20rpx;
+  padding: 20rpx 20rpx;
+}
+.cartall .carttop {
+  display: flex;
+  padding-bottom: 40rpx;
+}
+.cartall .carttop .dpname {
+  padding-left: 10rpx;
+}
+.cartall .cartitem {
+  padding-bottom: 30rpx;
+  display: flex;
+}
+.cartall .cartitem .leftitem {
+  flex: 1;
+}
+.cartall .cartitem .leftitem image {
+  width: 90%;
+  border-radius: 20rpx;
+}
+.cartall .cartitem .rightitem {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cartall .cartitem .rightitem .itemname {
+  font-size: 28rpx;
+}
+.cartall .cartitem .rightitem .pricenum {
+  display: flex;
+  justify-content: space-between;
+}
+.cartall .cartitem .rightitem .pricenum .goodsnum {
+  font-size: 28rpx;
+  color: #666;
+}
+.cartall .cartbottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  padding: 10rpx 30rpx;
+}
+.footer .priceitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .priceitem .price {
+  color: var(--themecolor);
+  font-size: 36rpx;
+}
+.footer .tjdj {
+  color: white;
+  background-color: var(--themecolor);
+  border-radius: 50rpx;
+  padding: 0 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

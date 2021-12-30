@@ -1,0 +1,21 @@
+<view class="header">
+<view class="search">
+<view class="iconfont icon-sousuo-xianxing"></view>
+<input value="{{inputtext}}" type="text" placeholder="搜索商品" bindinput="inputchange"/>
+</view>
+<view class="text" bindtap="djss">搜索</view>
+</view>
+<scroll-view class="itemall" scroll-y>
+<navigator class="item" wx:for="{{goodssearch}}" wx:key="goodsid" url="../goodsdetail/index?goodsid={{item.goodsid}}">
+<view class="left">
+<image src="{{item.xq}}" mode="widthFix"></image>
+</view>
+<view class="right">
+<view class="name">{{item.name}}</view>
+<view class="priceitem">
+<view class="price">￥{{item.price}}</view>
+<view class="iconfont icon-jiarugouwuche"></view>
+</view>
+</view>
+</navigator>
+</scroll-view>

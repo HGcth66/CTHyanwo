@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  margin-top: 20rpx;
+  height: 70rpx;
+}
+.header .search {
+  flex: 8;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  margin: 0  20rpx;
+  border-radius: 50rpx;
+}
+.header .search .iconfont {
+  padding: 0 20rpx;
+}
+.header .search input {
+  color: #666;
+  font-size: 28rpx;
+}
+.header .text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  padding-right: 20rpx;
+}
+.itemall {
+  height: calc(100vh - 110rpx);
+  margin-top: 20rpx;
+}
+.itemall .item {
+  background-color: white;
+  margin-bottom: 20rpx ;
+  padding: 0 20rpx;
+  height: 300rpx;
+  display: flex;
+}
+.itemall .item .left {
+  flex: 1;
+}
+.itemall .item .left image {
+  width: 300rpx;
+}
+.itemall .item .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30rpx 0;
+}
+.itemall .item .right .name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 32rpx;
+}
+.itemall .item .right .priceitem {
+  display: flex;
+  justify-content: space-between;
+}
+.itemall .item .right .priceitem .price {
+  color: var(--themecolor);
+  font-size: var(--themecolor);
+  font-size: 36rpx;
+}
+.itemall .item .right .priceitem .iconfont {
+  color: var(--themecolor);
+  font-size: 50rpx;
+}

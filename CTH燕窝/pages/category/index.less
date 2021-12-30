@@ -1,0 +1,58 @@
+.cate{
+    height: 100%;
+    .container{
+        display: flex;
+        height: calc( 100vh - 90rpx);
+        .left{
+        flex: 2;
+        text-align: center;
+        .leftcontent{
+        font-size: 28rpx;
+        color: #666;
+        padding: 25rpx;
+        }
+        .active{
+            background-color: #fff;
+            color: black;
+            border-left: 7rpx solid var(--themecolor);
+        }
+        }
+        .right{
+            background-color: #fff;
+        flex: 7;
+        .rightcontent{
+            .righttitle{
+                font-size: 28rpx;
+                color: #666;
+                padding: 10rpx;
+            }
+            .rightgoods{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20rpx;
+                height: 100%;
+                image{
+                    flex: 2;
+                    padding: 10rpx;
+                }
+                .goodsprice{
+                    flex: 4;
+                    padding: 10rpx;
+                    .goodsname{
+                        display:-webkit-box;
+                overflow: hidden;
+                -webkit-box-orient:vertical;
+                -webkit-line-clamp: 1;
+                font-size: 28rpx;
+                    }
+                    .price{
+                        font-size: 32rpx;
+                        color: var(--themecolor);
+                        padding-top: 30rpx ;
+                    }
+                }
+            }
+        }
+        }
+    }
+}

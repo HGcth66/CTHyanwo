@@ -1,0 +1,7 @@
+<view class="search">
+<navigator url="../../pages/search/index" class="tabs">
+<view class="iconfont icon-sousuo-xianxing"></view>
+<view>搜索商品</view>
+</navigator>
+</view>
+

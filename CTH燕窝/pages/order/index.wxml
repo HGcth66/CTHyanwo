@@ -1,0 +1,26 @@
+<view class="header">
+全部订单
+</view>
+<scroll-view class="orders" scroll-y>
+<view class="item" wx:for="{{allbuy}}" wx:key="goodsid" wx:for-item="item1" wx:for-index="index1">
+    <view class="cartall">
+<view class="carttop">
+<view class="iconfont icon-4"></view>
+<view class="dpname">CTH燕窝</view>
+</view>
+<view class="address">{{item1.address.userName}} {{item1.address.telNumber}}</view>
+<view class="cartitem" wx:for="{{item1.cart}}" wx:key="goodsid" wx:for-item="item2" wx:for-index="index2">
+<view class="leftitem">
+<image src="{{item2.xq}}" mode="widthFix"></image>
+</view>
+<view class="rightitem">
+<view class="itemname">{{item2.name}}</view>
+<view class="pricenum">
+<view class="goodsprice">￥{{item2.price}}</view>
+<view class="goodsnum">X{{item2.num}}</view>
+</view>
+</view>
+</view>
+</view>
+</view>
+</scroll-view>

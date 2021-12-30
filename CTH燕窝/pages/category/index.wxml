@@ -1,0 +1,26 @@
+
+<view class="cate">
+    <tabs></tabs>
+    <view class="container">
+    <scroll-view  class="left" scroll-y>
+    <view class="leftcontent {{index===currentindex?'active':''}}" wx:for="{{leftlist}}" wx:key="id" data-index="{{index}}" bindtap="djleft">
+  {{item.name}}
+    </view>
+    </scroll-view>
+    <scroll-view class="right" scroll-y scroll-top="{{stop}}">
+    <view class="rightcontent" wx:for="{{rightcontent}}" wx:for-item="item1" wx:for-index="index1">
+        <view class="righttitle">
+        {{item1.title}}
+        </view>
+        <navigator class="rightgoods" wx:for="{{item1.children}}"  wx:for-item="item2" wx:for-index="index2" wx:key="goodsid" url="../goodsdetail/index?goodsid={{item2.goodsid}}">
+        <image mode="widthFix" src="{{item2.src}}"></image>
+        <view class="goodsprice">
+        <view class="goodsname">{{item2.name}}</view>
+        <view class="price">￥{{item2.price}}</view>
+        </view>
+        </navigator>
+    </view>
+    </scroll-view>
+    </view>
+</view>
+
